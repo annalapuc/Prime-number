@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class first {
+    public static void main(String[] args) {
+        for (; ; ) {
+        System.out.println("Podaj liczbe:");
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+
+            if (a == 1) {
+                System.out.println("Liczba nie jest pierwsza");
+            } else {
+                for (int i = 2; i < a - 1; i++) {
+                    if (a % i == 0) {
+                        System.out.println("Liczba nie jest pierwsza");
+                        break;
+                    } else {
+                        System.out.println("Jest to liczba pierwsza");
+                        break;
+                    }
+                }
+            }
+
+        }
+    }
+}
